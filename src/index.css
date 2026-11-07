@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Harmonized with Coral-Rose Blazer & Crisp White Hijab */
+    --coral-rose-deep: #B8324F;
+    --coral-rose-primary: #D94668;
+    --coral-rose-vibrant: #E85070;
+    --coral-rose-light: #F4728C;
+    --coral-soft: #FDE8ED;
+    --coral-subtle: #FFF2F5;
+
+    /* Clean Crisp Whites & Soft Warm Ivory */
+    --bg-base: #FAF8F6;
+    --bg-card: #FFFFFF;
+    --border-soft: #F0E6E1;
+    --border-accent: #F7D0DA;
+
+    /* Typography Charcoal */
+    --charcoal-dark: #1E2124;
+    --charcoal-body: #3B3F45;
+    --charcoal-muted: #6B7280;
+
+    /* Gold / Champagne Accents */
+    --gold-accent: #D4A359;
+    --gold-soft: #FBF4E8;
+  }
+
+  body {
+    background-color: #FAF8F6;
+    color: #2D3136;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom aesthetic utility classes */
+.glass-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(240, 218, 224, 0.7);
+}
+
+.coral-gradient {
+  background: linear-gradient(135deg, #B8324F 0%, #D94668 50%, #E85070 100%);
+}
+
+.coral-subtle-glow {
+  box-shadow: 0 10px 30px -10px rgba(217, 70, 104, 0.16), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+}
+
+.smooth-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.smooth-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(217, 70, 104, 0.18), 0 8px 18px -4px rgba(0, 0, 0, 0.04);
+}
